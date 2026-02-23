@@ -1,0 +1,33 @@
+# Preprocessed data & checkpoints
+preprocessed_data/
+*.pkl
+results_*/
+saved_models_*/
+
+# Embeddings (large files)
+glove.*.txt
+*.bin
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Environment
+.env
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+

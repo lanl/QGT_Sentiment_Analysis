@@ -1,0 +1,100 @@
+skillful man prepares sauce	1
+skillful man bakes dinner	1
+woman cooks tasty meal	1
+man prepares meal	1
+skillful woman debugs program	0
+woman prepares tasty meal	1
+person runs program	0
+person runs useful application	0
+woman prepares sauce	1
+woman prepares dinner	1
+skillful person prepares meal	1
+skillful person bakes dinner	1
+skillful woman bakes meal	1
+woman runs useful application	0
+man bakes tasty meal	1
+person prepares tasty meal	1
+woman runs application	0
+man prepares software	0
+man bakes tasty dinner	1
+person prepares useful program	0
+man debugs useful application	0
+person debugs useful application	0
+woman prepares program	0
+man prepares useful application	0
+skillful man cooks dinner	1
+man debugs useful software	0
+person cooks dinner	1
+skillful woman prepares meal	1
+man prepares application	0
+person debugs useful software	0
+person runs application	0
+skillful woman bakes sauce	1
+skillful man bakes meal	1
+woman cooks meal	1
+woman bakes dinner	1
+woman runs program	0
+skillful man prepares program	0
+skillful man cooks meal	1
+woman runs software	0
+skillful man debugs software	0
+man cooks dinner	1
+woman cooks tasty dinner	1
+woman cooks dinner	1
+man bakes tasty sauce	1
+man prepares dinner	1
+skillful person cooks sauce	1
+skillful man prepares software	0
+person prepares software	0
+person runs software	0
+person prepares tasty sauce	1
+skillful person bakes sauce	1
+skillful man cooks sauce	1
+man debugs program	0
+woman bakes tasty meal	1
+man runs software	0
+person prepares useful application	0
+person cooks meal	1
+woman debugs software	0
+skillful man runs software	0
+person bakes tasty sauce	1
+woman debugs application	0
+person bakes dinner	1
+woman debugs useful program	0
+man cooks tasty meal	1
+skillful person cooks meal	1
+person cooks sauce	1
+man cooks tasty sauce	1
+skillful woman runs program	0
+skillful person bakes meal	1
+person runs useful program	0
+woman prepares tasty dinner	1
+woman cooks tasty sauce	1
+skillful woman prepares software	0
+skillful man prepares dinner	1
+skillful woman cooks sauce	1
+woman runs useful program	0
+skillful person runs software	0
+skillful person prepares program	0
+man prepares sauce	1
+person cooks tasty sauce	1
+man cooks sauce	1
+man prepares program	0
+skillful person prepares software	0
+woman bakes meal	1
+skillful man bakes sauce	1
+man prepares useful software	0
+woman debugs program	0
+skillful woman runs application	0
+man debugs software	0
+skillful woman debugs application	0
+person debugs software	0
+person bakes meal	1
+skillful woman bakes dinner	1
+skillful woman cooks dinner	1
+woman runs useful software	0
+man cooks meal	1
+person debugs program	0
+woman bakes sauce	1
+skillful woman debugs software	0
+woman prepares meal	1
