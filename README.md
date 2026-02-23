@@ -14,7 +14,7 @@ The QGT encodes sentences as graphs where each word is a node with pre-trained e
 
 ### Python scripts
 
-- `train_model_from_bert.py` is the main training script. It trains both the QGT and CGT models on preprocessed graph data. The QGT uses parameterized quantum circuits for Q/K generation; the CGT uses classical linear projections. Ablation flags allow disabling individual quantum components (QFT, entanglement, RL regularization, LayerNorm). Both models use the same graph structure, embeddings, message passing, and training procedure — the only difference is the attention mechanism.
+- `train_qgt_cgt.py` is the main training script. It trains both the QGT and CGT models on preprocessed graph data. The QGT uses parameterized quantum circuits for Q/K generation; the CGT uses classical linear projections. Ablation flags allow disabling individual quantum components (QFT, entanglement, RL regularization, LayerNorm). Both models use the same graph structure, embeddings, message passing, and training procedure — the only difference is the attention mechanism.
 
 - `preprocess.py` converts raw tab-separated text files into graph-structured PyTorch Geometric `Data` objects. Supports BERT (768-dim, 10 qubits), GloVe (50-dim, 6 qubits), and Word2Vec (300-dim, 9 qubits) embeddings, and several graph construction strategies (fully connected, chain, k-nearest neighbor). Outputs are saved as pickle files.
 
@@ -52,16 +52,16 @@ pip install -r requirements.txt
 
 ```bash
 # BERT embeddings, fully connected graph
-python preprocess.py --data_path data/yelp_labelled.txt --embedding bert --graph full
+python preprocess.py --data_path original/yelp_labelled.txt --embedding bert --graph full
 
 # GloVe embeddings, KNN graph
-python preprocess.py --data_path data/yelp_labelled.txt --embedding glove --graph knn-5
+python preprocess.py --data_path original/yelp_labelled.txt --embedding glove --graph knn-5
 
 # Multiple graph types
-python preprocess.py --data_path data/yelp_labelled.txt --embedding bert --graph full knn-5 chain
+python preprocess.py --data_path original/yelp_labelled.txt --embedding bert --graph full knn-5 chain
 
 # Quick test with small subset
-python preprocess.py --data_path data/yelp_labelled.txt --embedding bert --graph full --small 100
+python preprocess.py --data_path original/yelp_labelled.txt --embedding bert --graph full --small 100
 ```
 
 Output is saved to `preprocessed_data/{dataset}/{embedding}/{graph}/data.pkl`.
@@ -70,13 +70,13 @@ Output is saved to `preprocessed_data/{dataset}/{embedding}/{graph}/data.pkl`.
 
 ```bash
 # Train both QGT and CGT
-python train_model_from_bert.py --data_path preprocessed_data/yelp_labelled/bert/full/data.pkl
+python train_qgt_cgt.py --data_path preprocessed_data/yelp_labelled/bert/full/data.pkl
 
 # QGT only
-python train_model_from_bert.py --data_path preprocessed_data/yelp_labelled/bert/full/data.pkl --qgt_only
+python train_qgt_cgt.py --data_path preprocessed_data/yelp_labelled/bert/full/data.pkl --qgt_only
 
 # CGT only
-python train_model_from_bert.py --data_path preprocessed_data/yelp_labelled/bert/full/data.pkl --cgt_only
+python train_qgt_cgt.py --data_path preprocessed_data/yelp_labelled/bert/full/data.pkl --cgt_only
 ```
 
 Ablation flags for QGT:
