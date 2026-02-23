@@ -36,7 +36,7 @@ The QGT encodes sentences as graphs where each word is a node with pre-trained e
 | IMDB | `imdb_labelled.txt` | 1,000 |
 | Amazon | `amazon_cells_labelled.txt` | 1,000 |
 | Meaning Classification | `mc_full.txt` | 100 |
-| Role Playing | `rp_full.txt` | 104 |
+| Relative Pronoun | `rp_full.txt` | 104 |
 
 ## Installation
 
